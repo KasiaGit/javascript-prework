@@ -1,5 +1,8 @@
 let argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 let argButtonName, buttonTest;
+const buttonRock    = document.getElementById('button-rock');
+const buttonPaper   = document.getElementById('button-paper');
+const buttonScissor = document.getElementById('button-scissors');
 
 /**
  * Describe this function...
@@ -57,15 +60,13 @@ function buttonClicked(argButtonName) {
   displayResult(playerMove, computerMove);
 }
 
-buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function () {
   buttonClicked('Guzik kamień');
 });
-buttonPaper = document.getElementById('button-paper');
+
 buttonPaper.addEventListener('click', function () {
   buttonClicked('Guzik papier');
 });
-buttonScissor = document.getElementById('button-scissors');
 buttonScissor.addEventListener('click', function () {
   buttonClicked('Guzik kamień');
 });
